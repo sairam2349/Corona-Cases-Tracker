@@ -1,0 +1,41 @@
+<div class="container">
+    <h2>SELF-ASSESSMENT</h2>
+    <form [formGroup]="assessmentForm" (ngSubmit)="sendEmail()">
+        <div class="form-group">
+            <label>Are you currently experiencing any of these symptoms? Choose any that apply.</label><br>
+            <input type="radio" value="fever" formControlName="q1" class="" id="fever">
+            <label for="fever">FEVER</label><br>
+            <input type="radio" value="cough" formControlName="q1" id="cough">
+            <label for="cough">COUGH</label><br>
+            <input type="radio" value="chills" formControlName="q1" id="chills">
+            <label for="chills">CHILLS</label><br>
+            <input type="radio" value="breathe" formControlName="q1" id="breathshortness">
+            <label for="breathshortness">SHORTNESS OF BREATHE</label><br>
+            <input type="radio" value="runny_nose" formControlName="q1" id="runnynose">
+            <label for="runnynose">RUNNY NOSE</label><br>
+        </div><hr>
+        <div class="form-group">
+            <label>In the last 14 days, have you been in close physical contact with someone who 
+                tested positive for COVID-19?</label><br>
+            <input type="radio" id="yes" value="yes" formControlName="q2">
+            <label for="yes">YES</label><br>
+            <input type="radio" id="no" value="no" formControlName="q2">
+            <label for="no">NO</label><br>
+        </div><hr>
+        <div class="form-group">
+            <label>Have you travelled outside of Canada in the last 14 days?</label><br>
+            <input type="radio" id="yes" value="yes" formControlName="q3">
+            <label for="yes">YES</label><br>
+            <input type="radio" id="no" value="no" formControlName="q3">
+            <label for="no">NO</label><br>
+        </div><hr>
+        <div class="form-group">
+            <label>Enter your Email:&ensp;</label>
+            <input type="email" formControlName="email"  />
+            <p>Note: Please check Spam folder in your mail for the Report</p>
+        </div><hr>
+        <div class="form-group">
+            <button class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>

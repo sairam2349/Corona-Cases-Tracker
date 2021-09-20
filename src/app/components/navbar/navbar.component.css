@@ -1,0 +1,26 @@
+a{
+    color: grey;
+}
+
+a :active{
+    color: black;
+    font-weight: bold;
+}
+
+
+
+.logo{
+    margin-left: 80px;
+    height: 40px;
+    width: 40px;
+}
+
+.about{
+    margin-right: 80px;
+}
+
+
+.highlight{
+    color:black !important;
+    font-weight: bold;
+  }

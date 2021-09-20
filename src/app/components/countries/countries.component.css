@@ -1,0 +1,31 @@
+.countryselection{
+    padding-top: 180px;  
+    text-align: center;
+}
+
+
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    margin-top: 100px;
+  }
+  
+  .left {
+    left: 0;
+    /* background-color: #111; */
+  }
+  
+  .right {
+    right: 0;
+    padding-right: 20px
+    /* background-color: red; */
+  }
+
+  h5{
+    font-weight: bold;
+  }

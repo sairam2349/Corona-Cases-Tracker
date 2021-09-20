@@ -1,0 +1,14 @@
+<div class="split left">
+    <app-dashboard-card [totalConfirmed]='totalConfirmed' [totalRecovered]='totalRecovered'
+        [totalDeaths]='totalDeaths' [totalActive]='totalActive'></app-dashboard-card>
+</div>  
+<div class="split right">
+    <div class="countryselection">
+        <h5>Select Country</h5>
+        <!-- <label for="c" class="countrylabel">Select Country</label> -->
+        <select name="" class="form-control" id="c" #input (change)='updateValues(input.value)' >
+            <option value="">Select a Country</option>
+            <option value="{{con}}" *ngFor = 'let con of countries'>{{con}} </option>
+        </select>
+    </div>
+</div>

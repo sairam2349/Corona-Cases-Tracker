@@ -1,0 +1,30 @@
+<div style="margin: 60px;margin-top: 40px;">
+    <div style="width:50%;display: inline-block">
+
+        <h2>CORONA CASES</h2>
+        <H2>STATISTICS WORLD-WIDE</H2>
+
+        <app-dashboard-card [totalConfirmed]='totalConfirmed' [totalRecovered]='totalRecovered'
+            [totalDeaths]='totalDeaths' [totalActive]='totalActive'></app-dashboard-card>
+
+    </div>
+    <div style="width:50%; display: inline-block">
+        <!-- <div class="form-group">
+            <label for="radioGroupLabel">Choose Category: </label>
+            <input type="radio" #c (click)="updateChart(c)" name="casetype" id="c" value="c">
+            <label for="c">Confirmed</label>
+            <input type="radio" #r (click)="updateChart(r)"name="casetype" id="r" value="r">
+            <label for="r">Recoverd</label>
+            <input type="radio" #d (click)="updateChart(d)"name="casetype" id="d" value="d">
+            <label for="d">Death</label>
+            <input type="radio" #a (click)="updateChart(a)"name="casetype" id="a" value="a">
+            <label for="a">Active</label>
+        </div> -->
+        <h4>PieChart of Statistics</h4>
+        <google-chart [data]="pieChart"></google-chart>
+        <br>
+
+        <h4>ColumnChart of Statistics</h4>
+        <google-chart [data]="columnChart"></google-chart>
+    </div>
+</div>

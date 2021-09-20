@@ -1,0 +1,10 @@
+h2{
+    margin-top: 20px;
+    text-align: center;
+}
+
+p{
+    margin: 30px 60px;
+    text-align: justify;
+  text-justify: inter-word;
+}

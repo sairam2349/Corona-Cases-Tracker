@@ -1,0 +1,21 @@
+<div style="display:flex;justify-content: start;">
+    <mat-card class="count">
+        <mat-card-content>Confirmed</mat-card-content>
+        <mat-card-title>{{totalConfirmed | number}}</mat-card-title>
+    </mat-card>
+    <mat-card class="count">
+        <mat-card-content> Recovered </mat-card-content>
+        <mat-card-title> {{totalRecovered | number}} </mat-card-title>
+    </mat-card>
+</div>
+
+<div style="display:flex;justify-content: start;">
+    <mat-card class="count">
+        <mat-card-content>Deaths</mat-card-content>
+        <mat-card-title> {{totalDeaths | number}} </mat-card-title>
+    </mat-card>
+    <mat-card class="count">
+        <mat-card-content>Active</mat-card-content>
+        <mat-card-title> {{totalActive | number}} </mat-card-title>
+    </mat-card>
+</div>

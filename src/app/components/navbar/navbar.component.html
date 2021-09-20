@@ -1,0 +1,38 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" router-link='/'>Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" router-link='countries'>Search by Country</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" router-link='newsfaq'>News & FAQ</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" router-link='aboutus'>About Us</a>
+          </li>
+      </ul>
+    </div>
+  </nav> -->
+
+  <nav class="navbar navbar-light bg-light">    
+    <a class="navbar-brand" routerLink='/'>
+      <img class="logo" src="assets/images/logo.png" alt="Covid logo">
+      Covid-19 Tracker</a>
+    <div class="form-inline">
+        <a class="nav-link" routerLink='/' [ngClass]="{'highlight': router.url== '/'}" >World-wide <span class="sr-only">(current)</span></a>
+        <a class="nav-link" routerLink='countries' [ngClass]="{'highlight': router.url== '/countries'}" [routerLinkActive]="['is-active']">Search by Country</a>
+        <a class="nav-link" routerLink='symptoms' [ngClass]="{'highlight': router.url== '/symptoms'}">Symptoms</a>
+        <a class="nav-link" routerLink='news' [ngClass]="{'highlight': router.url== '/news'}">News & FAQ</a>
+        <a class="nav-link" routerLink='selfassessment' [ngClass]="{'highlight': router.url== '/selfassessment'}">Self-Assessment</a>
+        <a class="nav-link about" routerLink='aboutus' [ngClass]="{'highlight': router.url== '/aboutus'}">About Us</a>
+      <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+      </div>
+  </nav>
